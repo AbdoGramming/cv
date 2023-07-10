@@ -20,6 +20,7 @@ img {
 
 body {
   font-size: rem(16);
+  font-family: "Inter", sans-serif;
 }
 
 body,
@@ -59,6 +60,7 @@ a {
 .header {
   .title {
     text-align: center;
+    padding-inline: rem(20);
   }
 }
 
@@ -88,7 +90,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: rem(40);
-
+  padding-inline: rem(20);
   .me img {
     max-height: 400px;
     margin-bottom: rem(20);
@@ -113,7 +115,6 @@ a {
 
 .skills {
   border-block: 3px solid #000;
-
   .skill-list {
     display: flex;
     justify-content: flex-start;
@@ -123,15 +124,6 @@ a {
     & > * + * {
       margin-left: rem(40);
     }
-  }
-  .skill {
-    text-align: center;
-    border: 2px solid #000;
-    border-radius: 30px;
-    padding: rem(10) rem(25);
-  }
-  .three, .four {
-   margin-top: rem(25);
   }
   @media screen and (min-width: rem(1200)) {
     .skill-list {
@@ -227,4 +219,48 @@ a {
 .projects {
   max-width: rem(1200);
   margin-inline: auto;
+}
+
+.three,
+.four {
+  margin-top: rem(30);
+  @media screen and (min-width: rem(1200)) {
+    margin-top: rem(40);
+  }
+  p {
+    font-size: rem(25);
+  }
+  @media screen and (max-width: rem(600)) {
+    p {
+      font-size: rem(20);
+    }
+  }
+  @media screen and (max-width: rem(450)) {
+    p {
+      font-size: rem(15);
+    }
+  }
+}
+
+.php {
+  width: 100px;
+}
+.python {
+  width: 130px;
+}
+@media screen and (max-width: rem(500)) {
+  .php {
+    width: 80px;
+  }
+  .python {
+    width: 100px;
+  }
+  @media screen and (max-width: rem(450)) {
+    .php {
+      width: 70px;
+    }
+    .python {
+      width: 80px;
+    }
+  }
 }

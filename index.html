@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.scss" />
   </head>
   <body>
@@ -22,11 +28,7 @@
     <main>
       <section class="summery">
         <div class="me">
-          <picture>
-            <source media="(min-width): 601px" srcset="public/me.png" />
-            <source media="(max-width: 600px)" srcset="public/me-cropped.png" />
-            <img src="public/me-cropped.png" alt="" />
-          </picture>
+          <img src="public/me.jpg" alt="" />
         </div>
         <p class="sum">
           " Current student looking to join the workforce to gain real-world
@@ -53,14 +55,16 @@
         </section>
         <section class="three">
           <ul class="skill-list">
-            <li class="php">intermediate at :</li>
-            <li class="skill">PHP</li>
+            <li><p>Intermediate at :</p></li>
+            <li><img class="php" src="./public/arrow/PHP.svg" alt="" /></li>
           </ul>
         </section>
         <section class="four">
           <ul class="skill-list">
-            <li class="python">know the basics of :</li>
-            <li class="skill">Python</li>
+            <li><p>Know the basics of :</p></li>
+            <li>
+              <img class="python" src="./public/arrow/PYTHON.svg" alt="" />
+            </li>
           </ul>
         </section>
       </section>
